@@ -1,0 +1,30 @@
+#popup-aviso {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--cor);
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 9999;
+    max-width: 90%; /* Ajusta a largura máxima */
+    max-height: 400px;
+    overflow-y: auto;
+    width: auto; /* Auto para ajustar de acordo com o conteúdo */
+    height: auto;
+    min-width: 400px; /* Largura mínima */
+}
+
+
+
+#popup-aviso button {
+  margin-top: 15px;
+  background: #10457d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
