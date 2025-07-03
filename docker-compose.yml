@@ -1,0 +1,12 @@
+services:
+  db:
+    image: mysql:8.0
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+      - ./scripts:/scripts
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: moodle
+    ports:
+      - 3320:3306
+    container_name: mysql_default
